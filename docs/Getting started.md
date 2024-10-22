@@ -1,6 +1,6 @@
 # Getting started
 
-Welcome to the project! This guide will help you set up your development environment and get the project running.
+Welcome! This guide will help you set up your development environment and get Hypixel.Paniek.de running locally.
 
 1. **Clone the repository**
 
@@ -30,10 +30,18 @@ Welcome to the project! This guide will help you set up your development environ
    cp .env.example .env
    pnpm install --shamefully-hoist
    pnpm run development
+   composer install
    php artisan key:generate
    ```
+2. **Set up the Hypixel API key**
 
-2. **Start the development server**
+   You need to provide a Hypixel API key for the website to work. You can get one at https://developers.hypixel.net/.
+
+   ```sh
+   HYPIXEL_API_KEY=<your-key-here>
+   ```
+
+3. **Start the development server**
 
    You can start the development server using the following command:
 
@@ -41,6 +49,4 @@ Welcome to the project! This guide will help you set up your development environ
    php artisan serve
    ```
 
-3. **Open the website**
-
-   Open your browser and navigate to http://localhost:8000.
+   You can now open your browser and navigate to http://localhost:8000.
