@@ -32,6 +32,7 @@ Welcome! This guide will help you set up your development environment and get Hy
    pnpm run development
    composer install
    php artisan key:generate
+   php artisan ide-helper:generate
    ```
 2. **Set up the Hypixel API key**
 
