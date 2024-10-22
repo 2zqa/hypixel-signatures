@@ -64,7 +64,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/variables";
+@use "sass:color";
+@use "../../sass/variables";
 
 th {
   cursor: pointer;
@@ -76,7 +77,7 @@ th {
   }
 
   &.sorted-by {
-    background: lighten($color-secondary, 50%);
+    background: color.adjust(variables.$color-secondary, $lightness: 50%);
     box-shadow: inset rgba(0, 0, 0, .25) 0 0 5px 0;
 
     .triangle {
@@ -85,7 +86,7 @@ th {
   }
 
   &:hover, &:focus {
-    background: lighten($color-secondary, 60%);
+    background: color.adjust(variables.$color-secondary, $lightness: 60%);
   }
 }
 </style>
